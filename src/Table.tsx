@@ -56,6 +56,7 @@ export interface TableProps<ValueType>
   children?: React.ReactNode;
   components?: TableComponents;
   tableLayout?: 'fixed';
+  caption?: string;
 }
 
 interface TableState {

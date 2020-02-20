@@ -1,6 +1,6 @@
 {
   "name": "rc-table",
-  "version": "6.10.11",
+  "version": "6.10.11-ksd.1",
   "description": "table ui component for react",
   "keywords": [
     "react",
@@ -17,17 +17,17 @@
   ],
   "main": "./lib/index",
   "module": "./es/index",
-  "homepage": "http://github.com/react-component/table",
+  "homepage": "http://github.com/kaltarbeit/table",
   "maintainers": [
     "yiminghe@gmail.com",
     "afc163@gmail.com"
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:react-component/table.git"
+    "url": "git@github.com:kaltarbeit/table.git"
   },
   "bugs": {
-    "url": "http://github.com/react-component/table/issues"
+    "url": "http://github.com/kaltarbeit/table/issues"
   },
   "license": "MIT",
   "scripts": {
@@ -83,5 +83,8 @@
     "react-virtualized": "^9.12.0",
     "styled-components": "^4.3.2",
     "typescript": "^3.6.4"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@kaltarbeit"
   }
 }
