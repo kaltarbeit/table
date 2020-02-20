@@ -18,6 +18,7 @@ class BaseTable extends React.Component {
     expander: PropTypes.object.isRequired,
     getRowKey: PropTypes.func,
     isAnyColumnsFixed: PropTypes.bool,
+    caption: PropTypes.string,
   };
 
   static contextTypes = {
@@ -136,7 +137,7 @@ class BaseTable extends React.Component {
   render() {
     const { table } = this.context;
     const { components } = table;
-    const { prefixCls, scroll, data, getBodyWrapper } = table.props;
+    const { prefixCls, scroll, data, getBodyWrapper, caption } = table.props;
     const { expander, tableClassName, hasHead, hasBody, fixed } = this.props;
     const tableStyle = {};
 
@@ -164,6 +165,7 @@ class BaseTable extends React.Component {
 
     return (
       <Table className={tableClassName} style={tableStyle} key="table">
+        {caption && <caption>{caption}</caption>}
         <ColGroup columns={columns} fixed={fixed} />
         {hasHead && <TableHeader expander={expander} columns={columns} fixed={fixed} />}
         {body}

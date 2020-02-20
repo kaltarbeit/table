@@ -16,6 +16,7 @@ class Table extends React.Component {
   static propTypes = {
     data: PropTypes.array,
     useFixedHeader: PropTypes.bool,
+    caption: PropTypes.string,
     columns: PropTypes.array,
     prefixCls: PropTypes.string,
     bodyStyle: PropTypes.object,
