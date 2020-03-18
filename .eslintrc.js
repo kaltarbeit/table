@@ -12,5 +12,6 @@ module.exports = {
     'no-confusing-arrow': 0,
     'jsx-a11y/label-has-for': 0,
     'jsx-a11y/label-has-associated-control': 0,
+    'jsx-a11y/no-noninteractive-tabindex': 0,
   },
 };
