@@ -101,7 +101,7 @@ export default function BodyTable<ValueType>(props: BodyTableProps<ValueType>, {
 
   return (
     <div
-      tabIndex={useTabIndex ? -1 : undefined}
+      tabIndex={useTabIndex ? 0 : undefined}
       key="bodyTable"
       className={`${prefixCls}-body`}
       style={bodyStyle}

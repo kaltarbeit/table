@@ -64,6 +64,7 @@ class Demo extends React.Component {
           添加
         </button>
         <Table
+          caption="테스트"
           columns={this.columns}
           data={this.state.data}
           components={{
